@@ -8,7 +8,7 @@
 						<view class="title">未登录</view>
 						<view class="">欢迎你使用会议室登陆系统！！</view>
 					</view>
-					<view class="top-login-right">立刻登陆</view>
+					<view class="top-login-right" @click="login">立刻登陆</view>
 				</view>
 				<view class="top-meeting">
 					<view class="top-meeting-news">
@@ -91,7 +91,11 @@
 
 		},
 		methods: {
-
+			login(){
+				uni.navigateTo({
+					url:'../login/login'
+				})
+			}
 		}
 	}
 </script>

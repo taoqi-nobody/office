@@ -12,7 +12,29 @@
 				
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "登陆",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#2B85E4",
+				"navigationBarTextStyle":"white"
+            }
+            
+        }
+		,{
+		    "path" : "pages/login/forgotPwd",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "找回密码",
+		        "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#2B85E4",
+				"navigationBarTextStyle":"white"
+		    }
+		    
+		}
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
