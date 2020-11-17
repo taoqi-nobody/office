@@ -12,14 +12,14 @@
 				</view>
 				<view class="top-meeting">
 					<view class="top-meeting-news">
-						<view class="top-meeting-news-title"> 我的会议</view>
+						<view class="top-meeting-news-title" @click="meet"> 我的会议</view>
 						<view class="dots">
 							<view class="dot"></view>
 							<view class="dot"></view>
 						</view>
 					</view>
 					<view class="top-meeting-news">
-						<view class="top-meeting-news-title"> 我的消息</view>
+						<view class="top-meeting-news-title" @click="mynews"> 我的消息</view>
 						<view class="dots">
 							<span class="dot"></span>
 							<span class="dot"></span>
@@ -32,7 +32,7 @@
 			<scroll-view scroll-x="true" class="scroll-box" >
 				<view class="list-box">
 					<block v-for="(item,index) in list" :key="index">
-						<view class="ss1">
+						<view class="ss1" @click="detail(index)">
 							<image :src="item.img" style="width: 60upx; height: 60upx;" mode=""></image>
 							<view class="">{{item.title}}</view>
 						</view>
@@ -44,7 +44,7 @@
 			<view class="name">
 				<view class="title">会议日程</view>
 				<view class="right">
-					<view class="">更多</view>
+					<view class="" @click="meet">更多</view>
 					<image src="../../static/right.png" style="width: 15upx; height: 15upx;" mode=""></image>
 				</view>
 			</view>
@@ -94,6 +94,27 @@
 			login(){
 				uni.navigateTo({
 					url:'../login/login'
+				})
+			},
+			detail(index){
+				if(index==0){
+					uni.navigateTo({
+						url:'./book'
+					})
+				}else if(index==1){
+					uni.navigateTo({
+						url:'./sign'
+					})
+				}
+			},
+			mynews(){
+				uni.navigateTo({
+					url:'./information'
+				})
+			},
+			meet(){
+				uni.navigateTo({
+					url:'./mymeet'
 				})
 			}
 		}

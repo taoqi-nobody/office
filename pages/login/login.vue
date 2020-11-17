@@ -162,6 +162,13 @@
 	}
 	.line2{
 		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		/* border: 1px solid #999; */
+		margin: 20upx 20upx;
+		line-height: 80upx;
+		border-radius: 10upx;
+		/* padding-left: 15upx; */
 	}
 	.phone-tel{
 		font-size: 15px;
@@ -181,7 +188,7 @@
 		align-items: center;
 		justify-content: flex-start;
 		border: 1px solid #999;
-		margin: 20upx 20upx;
+		/* margin: 20upx 20upx; */
 		line-height: 80upx;
 		border-radius: 10upx;
 		padding-left: 15upx;
@@ -201,7 +208,7 @@
 		align-items: center; */
 		/* justify-content: flex-start; */
 		/* border: 1px solid #999; */
-		margin: 20upx 20upx;
+		/* margin: 20upx 20upx; */
 		line-height: 80upx;
 		border-radius: 10upx;
 		/* padding-left: 15upx; */
