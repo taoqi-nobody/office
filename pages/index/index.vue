@@ -52,7 +52,7 @@
 				<scroll-view class="time-list" scroll-x="true" >
 					<view class="time-list-box">
 						<block v-for="(item,index) in timer">
-							<view class="week">
+							<view class="week " @click="changeWk(index)" :class="{changeWeek:weekIndex==index}" >
 								<view class="">{{item.day}}</view>
 								<view class="">{{item.date}}</view>
 							</view>
@@ -68,6 +68,7 @@
 	export default {
 		data() {
 			return {
+				weekIndex:'',
 				list:[
 					{img:'../../static/index1.png',title:'预定'},
 					{img:'../../static/index2.png',title:'签到'},
@@ -105,6 +106,22 @@
 					uni.navigateTo({
 						url:'./sign'
 					})
+				}else if(index==2){
+					uni.navigateTo({
+						url:'./attend'
+					})
+				}else if(index==3){
+					uni.navigateTo({
+						url:'./poll'
+					})
+				}else if(index==4){
+					uni.navigateTo({
+						url:'./process'
+					})
+				}else if(index==5){
+					uni.navigateTo({
+						url:'./examine'
+					})
 				}
 			},
 			mynews(){
@@ -116,6 +133,9 @@
 				uni.navigateTo({
 					url:'./mymeet'
 				})
+			},
+			changeWk(index){
+				this.weekIndex = index
 			}
 		}
 	}
@@ -262,5 +282,13 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+	}
+	.changeWeek{
+		background-color: #DCEEFD;
+		color: #007AFF;
+		border: 1px solid #007AFF;
+		width: 22%;
+		height: 125upx;
+		border-radius: 10upx;
 	}
 </style>
