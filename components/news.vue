@@ -99,7 +99,7 @@
 		width: 682upx;
 		font-size: 16upx;
 		border-bottom: 1upx solid #EEEEEE;
-		padding:10upx 0 30upx;
+		padding:10upx 10px 30upx;
 	}
 	
 	.state{

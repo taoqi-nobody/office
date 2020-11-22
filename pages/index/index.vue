@@ -13,17 +13,20 @@
 				<view class="top-meeting">
 					<view class="top-meeting-news">
 						<view class="top-meeting-news-title" @click="meet"> 我的会议</view>
-						<view class="dots">
+						<!-- <view class="dots">
 							<view class="dot"></view>
 							<view class="dot"></view>
-						</view>
+						</view> -->
+						<view class="line"></view>
 					</view>
+					<view class="">|</view>
 					<view class="top-meeting-news">
 						<view class="top-meeting-news-title" @click="mynews"> 我的消息</view>
-						<view class="dots">
+						<!-- <view class="dots">
 							<span class="dot"></span>
 							<span class="dot"></span>
-						</view>
+						</view> -->
+						<view class="line"></view>
 					</view>
 				</view>
 			</view>
@@ -186,6 +189,7 @@
 		display: flex;
 		justify-content: flex-start;
 		padding: 10upx 20upx;
+		align-items: center;
 		/* align-items: center; */
 	}
 	.top-meeting-news{
@@ -200,7 +204,13 @@
 	.top-meeting-news-title{
 		font-size: 16px;
 	}
-	.dots{
+	.line{
+		width: 40%;
+		height: 5upx;
+		background-color: #007AFF;
+		margin-top: 15upx;
+	}
+	/* .dots{
 		display: flex;
 		justify-content: space-between;
 		width: 30upx;
@@ -209,7 +219,7 @@
 		width: 10upx;
 		height: 10upx;
 		background-color: #000000;
-	}
+	} */
 	.scorll-list{
 		/* box-sizing: border-box; */
 		margin-top: 20upx;

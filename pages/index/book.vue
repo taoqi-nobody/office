@@ -67,22 +67,28 @@
 		<!-- 会议室选择 -->
 		<uni-popup id="popup" ref="popup" :type="type" :animation="false">
 			<view class="popup-content">
-				<view class="popup-box clearfix">
+				<view class="popup-box clearfix cose">
 					<view class="title fl">第一会议室</view>
 					<view class="number fr">可容纳206人</view>
 				</view>
-				<view>
-					<radio-group @change="radioChange">
+				<view class="cons">
+					<radio-group >
 						<label class="uni-list-cell uni-list-cell-pd" v-for="(item, index) in items" :key="item.value">
 							<view class="popup-box clearfix">
 								<view class="fl">
 									<radio :checked="index === current" />
 								</view>
-								<view class="fl">{{item.name}}</view>
-							</view>
+								<view class="fl">{{item.name}}</view>								
+							</view>							
 						</label>
+						<view class="zhezhu"></view>						
 					</radio-group>
+					<view class="btn">
+						<view class="rest" @click="close">返回</view>
+						<view class="btn-ok">预定</view>
+					</view>
 				</view>
+				
 			</view>
 		</uni-popup>
 		
@@ -120,23 +126,23 @@
 						name: '10:00-12:00',
 					},
 					{
-							name: '10:00-12:00',
-						},
-						{
-							name: '10:00-12:00',
-						},
-						{
-							name: '10:00-12:00',
-						},
-						{
-							name: '10:00-12:00',
-						},
-						{
-							name: '10:00-12:00',
-						},
-						{
-							name: '10:00-12:00',
-						},
+						name: '10:00-12:00',
+					},
+					{
+						name: '10:00-12:00',
+					},
+					{
+						name: '10:00-12:00',
+					},
+					{
+						name: '10:00-12:00',
+					},
+					{
+						name: '10:00-12:60',
+					},
+					{
+						name: '10:00-12:80',
+					},
 				],
 				current: 99
 			}
@@ -166,6 +172,9 @@
 				this.type = type
 				this.$refs.popup.open()
 			},
+			close(){
+				this.$refs.popup.close()
+			}
 			
 			
 			
@@ -283,13 +292,25 @@
 	}
 	
 	.popup-content {
-		height: 500upx;
+		height: 600upx;
 		background-color: #fff;
 		overflow: auto;
+		position: relative;
+	}
+	.cons{
+		height: auto;
 	}
 	.popup-box{
 		padding: 0 30upx;
+		background-color: #FAFAFA;
 		border-bottom: 1px solid #EEEEEE;
+		/* position: fixed;
+		top: 0;
+		left: 0;
+		right: 0; */
+	}
+	.cose{
+		background-color: #FFFFFF;
 	}
 	.popup-box .title{
 		font-size: 36upx;
@@ -302,11 +323,42 @@
 		line-height: 108upx;
 	}
 	.uni-list-cell {
-		justify-content: flex-start
+		justify-content: flex-start;
+		
 	}
 	.popup-box view{
 		font-size: 32upx;
 		line-height: 88upx;
 	}
-	
+	.zhezhu{
+		width: 100%;
+		height: 100upx;
+	}
+	.btn{
+		width: 100%;
+		height: 100upx;
+		margin-top: 20upx;
+		background-color: #FFFFFF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+	.rest{
+		width: 30%;
+		line-height: 70upx;
+		background-color: #eee;
+		text-align: center;
+		margin-right: 25upx;
+	}
+	.btn-ok{
+		width: 50%;
+		line-height: 80upx;
+		background-color: #007AFF;
+		text-align: center;
+		color: white;
+	}
 </style>
