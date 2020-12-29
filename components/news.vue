@@ -59,7 +59,7 @@
 	  content:"clear"; 
 	  height:0; 
 	  clear:both; 
-	  padding-top:5rpx;
+	  padding-top:5upx;
 	  overflow:hidden; 
 	  visibility:hidden;
 	}
@@ -91,19 +91,19 @@
 		line-height: 56upx;
 	}
 	.time{
-		font-size: 16rpx;
+		font-size: 30upx;
 		line-height: 56upx;
 		color: #C0C0C0;
 	}
 	.content{
 		width: 682upx;
-		font-size: 16upx;
+		font-size: 30upx;
 		border-bottom: 1upx solid #EEEEEE;
 		padding:10upx 10px 30upx;
 	}
 	
 	.state{
-		font-size: 16rpx;
+		font-size: 30upx;
 		line-height: 56upx;
 		color: #C0C0C0;
 	}

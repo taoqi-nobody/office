@@ -1,0 +1,23 @@
+
+.calendar-content{
+	position: relative;
+}
+.event{
+	position: absolute;
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	margin: 30rpx 10rpx;
+}
+.title{
+	width: 50%;
+	line-height: 50rpx;
+	text-align: center;
+	font-size: 14px;
+	margin: 0rpx auto;
+}
+.active{
+	border-bottom: 1px solid #007AFF;
+}
+

@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/book",
+    "pages/index/information",
+    "pages/index/mymeet",
+    "pages/index/sign",
+    "pages/index/attend",
+    "pages/index/poll",
+    "pages/index/process",
+    "pages/index/examine",
+    "pages/login/login",
+    "pages/login/forgotPwd"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

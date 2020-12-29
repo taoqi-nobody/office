@@ -1,0 +1,1 @@
+<view class="content"><view class="top"><view class="_h2">输入手机号码</view><view class="tex">请输入您登记的手机号码</view></view><view class="center"><input type="text" value="" placeholder="您的手机号码"/><view class="btn-get">获取验证码</view></view></view>

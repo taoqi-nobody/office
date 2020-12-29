@@ -1,0 +1,27 @@
+
+.top{
+	padding: 40rpx 40rpx;
+}
+.tex{
+	color: #999;
+	margin-top: 15rpx;
+	font-size: 17px;
+}
+.center{
+	padding: 0rpx 40rpx;
+}
+.center input{
+	font-size: 25px;
+	border-bottom: 1px solid #999;
+	margin-bottom: 30rpx;
+}
+.btn-get{
+	width: 100%;
+	line-height: 80rpx;
+	background-color: #007AFF;
+	text-align: center;
+	color: white;
+	font-size: 15px;
+	border-radius: 10rpx;
+}
+

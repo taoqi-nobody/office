@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "我的消息",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#2B85E4",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "card": "/components/news"
+  }
+}

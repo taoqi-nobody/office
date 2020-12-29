@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "登陆",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#2B85E4",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "uni-icons": "/components/uni-icons/uni-icons"
+  }
+}

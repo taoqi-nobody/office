@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "预定会议",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#2B85E4",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "uni-popup": "/components/uni-popup/uni-popup"
+  }
+}
